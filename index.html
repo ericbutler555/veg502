@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Veg502: Vegetarian Eating in Louisville, KY</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 
@@ -36,74 +38,76 @@
 
         <div class="columns">
           <div class="column">
-            <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
+            <div class="content">
+              <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
 
-            <br/>
+              <br/>
 
-            <p>Use the form or send the name of the dish or a phone photo of the menu along with the restaurant, and if you would recommend the item to <a href="mailto:menus@veg502.com">menus@veg502.com</a>. </p>
-            
-            <br/>
+              <p>Use the form, or send an email to <a href="mailto:menus@veg502.com">menus@veg502.com</a> with the following info: </p>
+              
+              <ul>
+                <li>Name of the dish</li>
+                <li>Restaurant</li>
+                <li>Photo</li>
+                <li>Would you recommend it?</li>
+              </ul>
 
-            <p>Questions about Veg502? Email us at <a href="mailto:info@veg502.com">info@veg502.com</a>.</p>
+              <br/>
+
+              <p>Questions about Veg502? Email us at <a href="mailto:info@veg502.com">info@veg502.com</a>.</p>
+            </div>
           </div>
-
 
           <div class="column">
 
             <form action="https://formspree.io/menus@veg502.com" method="POST">
 
-                <div class="field">
-                  <label class="label" for="dish_name">Dish Name</label>
-                  <div class="control">
-                    <input class="input" type="text" name="dish_name" id="dish_name" />
+              <div class="field">
+                <label class="label" for="dish_name">Dish Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="dish_name" id="dish_name" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="restaurant">Restaurant</label>
+                <div class="control">
+                  <input class="input" type="text" name="restaurant" id="restaurant" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" vfor="content">Image</label>
+                <div class="control">
+                  <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="4ee3d7967878825601d3" data-images-only />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="would_recommend">Would you recommend?</label>
+                <div class="control">
+                  <div class="select">
+                    <select name="would_recommend" id="would_recommend">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
                   </div>
                 </div>
+              </div>
 
-                <div class="field">
-                  <label class="label" for="restaurant">Restaurant</label>
-                  <div class="control">
-                    <input class="input" type="text" name="restaurant" id="restaurant" />
-                  </div>
+              <hr />
+
+              <div class="field">
+                <label class="label" for="your_name">Your Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="your_name" id="your_name" required />
                 </div>
+              </div>
 
-                <div class="field">
-                  <label class="label" vfor="content">Image</label>
-                  <div class="control">
-                    <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="4ee3d7967878825601d3" data-images-only />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label" for="would_recommend">Would you recommend?</label>
-                  <div class="control">
-                    <div class="select">
-                      <select name="would_recommend" id="would_recommend">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="field">
-                  <label class="label" for="your_name">Your Name</label>
-                  <div class="control">
-                    <input class="input" type="text" name="your_name" id="your_name" required />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label" for="your_email">Your Email</label>
-                  <div class="control">
-                    <input class="input" type="email" name="your_email" id="your_email" required />
-                  </div>
-                </div>
-
-                <button type="submit" class="button is-primary is-medium">Submit</button>
+              <button type="submit" class="button is-primary is-medium">Submit</button>
             </form>
           </div>
+        </div>
       </div>
     </section>
   </body>
