@@ -6,83 +6,93 @@
     <title>Veg502: Vegetarian Eating in Louisville, KY</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.1.4/uploadcare.full.min.js"></script>
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <div class="content">
-        
-          <h1 class="title">Thanks for visiting Veg502.</h1>
-        
-      </div>
 
-      <div class="columns">
-        <div class="column">
-          <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
-          <br/>
-          <p>Use the form or send the name of the dish or a phone photo of the menu along with the restaurant, and if you would recommend the item to <a href="mailto:menus@veg502.com">menus@veg502.com</a>. </p>
-          <p>Thanks!</p>
+    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.1.4/uploadcare.full.min.js"></script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:656896,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+            <h1 class="title">Thanks for visiting Veg502.</h1>
         </div>
 
+        <div class="columns">
+          <div class="column">
+            <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
+            <br/>
+            <p>Use the form or send the name of the dish or a phone photo of the menu along with the restaurant, and if you would recommend the item to <a href="mailto:menus@veg502.com">menus@veg502.com</a>. </p>
+            <p>Thanks!</p>
+          </div>
 
-        <div class="column">
 
-          <form action="https://formspree.io/menus@veg502.com" method="POST">
+          <div class="column">
 
-              <div class="field">
-                <label class="label" for="dish_name">Dish Name</label>
-                <div class="control">
-                  <input class="input" type="text" name="dish_name" id="dish_name" />
-                </div>
-              </div>
+            <form action="https://formspree.io/menus@veg502.com" method="POST">
 
-              <div class="field">
-                <label class="label" for="restaurant">Restaurant</label>
-                <div class="control">
-                  <input class="input" type="text" name="restaurant" id="restaurant" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label" vfor="content">Image</label>
-                <div class="control">
-                  <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="4ee3d7967878825601d3" data-images-only />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label" for="would_recommend">Would you recommend?</label>
-                <div class="control">
-                  <div class="select">
-                    <select name="would_recommend" id="would_recommend">
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
-                    </select>
+                <div class="field">
+                  <label class="label" for="dish_name">Dish Name</label>
+                  <div class="control">
+                    <input class="input" type="text" name="dish_name" id="dish_name" />
                   </div>
                 </div>
-              </div>
 
-              <hr />
-
-              <div class="field">
-                <label class="label" for="your_name">Your Name</label>
-                <div class="control">
-                  <input class="input" type="text" name="your_name" id="your_name" required />
+                <div class="field">
+                  <label class="label" for="restaurant">Restaurant</label>
+                  <div class="control">
+                    <input class="input" type="text" name="restaurant" id="restaurant" />
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label class="label" for="your_email">Your Email</label>
-                <div class="control">
-                  <input class="input" type="text" name="your_email" id="your_email" required />
+                <div class="field">
+                  <label class="label" vfor="content">Image</label>
+                  <div class="control">
+                    <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="4ee3d7967878825601d3" data-images-only />
+                  </div>
                 </div>
-              </div>
 
-              <button type="submit" class="button is-primary is-medium">Submit</button>
-          </form>
-        </div>
-    </div>
-  </section>
+                <div class="field">
+                  <label class="label" for="would_recommend">Would you recommend?</label>
+                  <div class="control">
+                    <div class="select">
+                      <select name="would_recommend" id="would_recommend">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="field">
+                  <label class="label" for="your_name">Your Name</label>
+                  <div class="control">
+                    <input class="input" type="text" name="your_name" id="your_name" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="your_email">Your Email</label>
+                  <div class="control">
+                    <input class="input" type="text" name="your_email" id="your_email" required />
+                  </div>
+                </div>
+
+                <button type="submit" class="button is-primary is-medium">Submit</button>
+            </form>
+          </div>
+      </div>
+    </section>
   </body>
 </html>
