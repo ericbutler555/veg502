@@ -38,7 +38,7 @@ body {
 }
 
 .uploadcare--widget__button {
-  background-color: #26a69a;
+  background-color: #789248;
   border-radius: 2px;
   color: #fff;
   cursor: pointer;
@@ -53,4 +53,9 @@ body {
   user-select: none;
   vertical-align: middle;
   z-index: 1;
+}
+
+.uploadcare--widget__button:hover,
+.uploadcare--widget__button:active {
+  background-color: #97b957;
 }
