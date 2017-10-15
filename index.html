@@ -66,41 +66,43 @@
         <div class="col s12 m6">
           <form action="https://formspree.io/menus@veg502.com" method="POST" class="card">
             <div class="card-content">
-              <div class="col s12">
-                <img class="carrot" src="carrot.svg" width="70" />
-              </div>
-              <div class="input-field col s12">
-                <label for="dish_name">Dish Name</label>
-                <input type="text" name="dish_name" id="dish_name" required />
-              </div>
+              <div class="row">
+                <div class="col s12">
+                  <img class="carrot" src="carrot.svg" width="70" />
+                </div>
+                <div class="input-field col s12">
+                  <label for="dish_name">Dish Name</label>
+                  <input type="text" name="dish_name" id="dish_name" required />
+                </div>
 
-              <div class="input-field col s12">
-                <label class="label" for="restaurant">Restaurant</label>
-                <input class="input" type="text" name="restaurant" id="restaurant" required />
-              </div>
+                <div class="input-field col s12">
+                  <label class="label" for="restaurant">Restaurant</label>
+                  <input class="input" type="text" name="restaurant" id="restaurant" required />
+                </div>
 
-              <div class="divider"></div>
+                <div class="divider"></div>
 
-              <div class="input-field col s12" style="margin-top:0;">
-                <div class="file-field input-field" style="margin-top:0;">
-                  <input type="hidden" role="uploadcare-uploader" name="content" data-images-only />
+                <div class="input-field col s12" style="margin-top:0;">
+                  <div class="file-field input-field" style="margin-top:0;">
+                    <input type="hidden" role="uploadcare-uploader" name="content" data-images-only />
+                  </div>
+                </div>
+
+                <div class="input-field col s12" style="padding-top:15px;">   
+                  <select name="would_recommend" id="would_recommend">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                  <label class="label" for="would_recommend">Would you recommend?</label>   
+                </div>
+
+                <div class="input-field col s12">
+                  <label class="label" for="your_name">Your Name</label>       
+                  <input class="input" type="text" name="your_name" id="your_name" required />
                 </div>
               </div>
-
-              <div class="input-field col s12" style="padding-top:15px;">   
-                <select name="would_recommend" id="would_recommend">
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-                <label class="label" for="would_recommend">Would you recommend?</label>   
-              </div>
-
-              <div class="input-field col s12">
-                <label class="label" for="your_name">Your Name</label>       
-                <input class="input" type="text" name="your_name" id="your_name" required />
-              </div>
-           
-
+            </div>
+            <div class="card-action">
               <button type="submit" class="waves-effect waves-light btn">Submit</button>
             </div>
           </form>
