@@ -33,85 +33,99 @@
   </head>
 
   <body>
-    <section class="section">
-      <div class="container">
-        <div class="content">
-            <h1 class="title">Thanks for visiting Veg502.</h1>
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <div class="content">
-              <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
-
-              <br/>
-
-              <p>Use the form, or send an email to <a href="mailto:menus@veg502.com">menus@veg502.com</a> with the following info: </p>
-              
-              <ul>
-                <li>Name of the dish</li>
-                <li>Restaurant</li>
-                <li>Photo</li>
-                <li>Would you recommend it?</li>
-              </ul>
-
-              <br/>
-
-              <p>Questions about Veg502? Email us at <a href="mailto:info@veg502.com">info@veg502.com</a>.</p>
-            </div>
-          </div>
-
-          <div class="column">
-
-            <form action="https://formspree.io/menus@veg502.com" method="POST">
-
-              <div class="field">
-                <label class="label" for="dish_name">Dish Name</label>
-                <div class="control">
-                  <input class="input" type="text" name="dish_name" id="dish_name" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label" for="restaurant">Restaurant</label>
-                <div class="control">
-                  <input class="input" type="text" name="restaurant" id="restaurant" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label" vfor="content">Image</label>
-                <div class="control">
-                  <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="4ee3d7967878825601d3" data-images-only />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label" for="would_recommend">Would you recommend?</label>
-                <div class="control">
-                  <div class="select">
-                    <select name="would_recommend" id="would_recommend">
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <hr />
-
-              <div class="field">
-                <label class="label" for="your_name">Your Name</label>
-                <div class="control">
-                  <input class="input" type="text" name="your_name" id="your_name" required />
-                </div>
-              </div>
-
-              <button type="submit" class="button is-primary is-medium">Submit</button>
-            </form>
-          </div>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <img src="veg502-logo.svg" width="150" />
+          <h1>Thanks for visiting Veg502.</h1>
         </div>
       </div>
-    </section>
+
+      <div class="row">
+        <div class="col s12 m6">
+
+          <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
+
+          <br/>
+
+          <p>Use the form, or send an email to <a href="mailto:menus@veg502.com">menus@veg502.com</a> with the following info: </p>
+          
+          <ul class="browser-default">
+            <li>Name of the dish</li>
+            <li>Restaurant</li>
+            <li>Photo</li>
+            <li>Would you recommend it?</li>
+          </ul>
+
+          <br/>
+
+          <p>Questions about Veg502? Email us at <a href="mailto:info@veg502.com">info@veg502.com</a>.</p>
+        </div>
+
+        <div class="col s12 m6">
+          <form action="https://formspree.io/menus@veg502.com" method="POST" class="card">
+            <div class="card-content">
+              <div class="col s12">
+                <img class="carrot" src="carrot.svg" width="70" />
+              </div>
+              <div class="input-field col s12">
+                <label for="dish_name">Dish Name</label>
+                <input type="text" name="dish_name" id="dish_name" required />
+              </div>
+
+              <div class="input-field col s12">
+                <label class="label" for="restaurant">Restaurant</label>
+                <input class="input" type="text" name="restaurant" id="restaurant" required />
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="input-field col s12" style="margin-top:0;">
+                <div class="file-field input-field" style="margin-top:0;">
+                  <input type="hidden" role="uploadcare-uploader" name="content" data-images-only />
+                </div>
+              </div>
+
+              <div class="input-field col s12" style="padding-top:15px;">   
+                <select name="would_recommend" id="would_recommend">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                <label class="label" for="would_recommend">Would you recommend?</label>   
+              </div>
+
+              <div class="input-field col s12">
+                <label class="label" for="your_name">Your Name</label>       
+                <input class="input" type="text" name="your_name" id="your_name" required />
+              </div>
+           
+
+              <button type="submit" class="waves-effect waves-light btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+        &copy; 2017 Veg502
+        <a class="grey-text text-lighten-4 right" href="#!">
+          Eric Butler/Sarah Powers/Aaron Arney
+        </a>
+        </div>
+      </div>
+    </footer>
+            
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $(function () {
+        $("select").material_select();
+      });
+    </script>
   </body>
 </html>
