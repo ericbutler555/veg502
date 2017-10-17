@@ -1,0 +1,199 @@
+// colors:
+
+$white: #fff;
+$black: #444;
+$orange: #e36326;
+$green: #789248;
+
+// fonts:
+
+$sans: -apple-system, BlinkMacSystemFont, sans-serif;
+$bodyFont: "Nunito", $sans;
+
+// breakpoints:
+
+$tablet: "min-width: 900px";
+$laptop: "min-width: 1200px";
+$under-tablet: "max-width: 899px";
+$under-phablet: "max-width: 699px";
+$extra-small: "max-width: 399px";
+
+// global:
+
+* {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: $bodyFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: #222 url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.container {
+  padding: 40px 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (min-width: 700px) {
+    padding-bottom: 80px;
+  }
+
+  @media ($tablet) {
+    padding: 40px 50px;
+  }
+}
+
+// info
+
+.info {
+  text-align: center;
+  color: $white;
+  margin-bottom: 40px;
+
+  @media ($tablet) {
+    float: left;
+    width: 60%;
+    padding: 60px 40px 0 0;
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 1.125em;
+  font-weight: normal;
+}
+
+article {
+  font-size: 20px;
+
+  h3 {
+    font-size: 1.4em;
+
+    @media ($laptop) {
+      font-size: 1.6em;
+    }
+
+    br {
+      @media ($under-phablet) {
+        line-height: 1.75;
+      }
+    }
+  }
+
+  ul {
+    padding: 0 0 0 1.5em;
+
+    @media ($under-tablet) {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  p,
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+// signup
+
+.signup {
+  @media ($tablet) {
+    float: left;
+    width: 40%;
+    padding-top: 160px;
+  }
+}
+
+.signup-form {
+  max-width: 420px;
+  padding: 40px 25px;
+  margin: 0 auto;
+  background: rgba($white, 0.95);
+  box-shadow: 0 4px 10px $black;
+  border-radius: 4px;
+  text-align: center;
+
+  p {
+    margin: 0 0 1.5em;
+
+    @media (min-width: 480px) and ($under-tablet) {
+      margin: 0 1em 1.5em;
+    }
+  }
+}
+
+.carrot {
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 1px solid rgba($black, 0.5);
+  vertical-align: middle;
+  margin-right: 10px;
+
+  @media ($extra-small) {
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+label {
+  color: $green;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  font: inherit;
+  font-size: 100%;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 1.5em auto;
+  border: 1px solid $black;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background: $orange;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 30px;
+  color: $white;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background: lighten($orange, 10%);
+  }
+}

@@ -1,5 +1,7 @@
 # Veg502
 
-The menu item submission form is processed using [Formspree](formspree.io) in conjunction with [UploadCare](https://uploadcare.com/) to process and store attached images. 
+Louisville, Kentucky's vegetarian eating guide, hand-picked by you.
 
-Google Analytics and Hotjar are incorperated for visitor tracking.
+Currently in development.
+
+Landing page includes an embedded MailChimp signup form for early adopters.

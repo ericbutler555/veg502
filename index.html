@@ -1,133 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Veg502: Vegetarian Eating in Louisville, KY</title>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-       
-    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.1.4/uploadcare.full.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108134983-1"></script>
-    <script>
-      UPLOADCARE_PUBLIC_KEY = "4ee3d7967878825601d3";
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-108134983-1');
-
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:656896,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veg502 &ndash; vegetarian eating guide in Louisville, KY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-   
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <img src="veg502-logo.svg" width="150" />
-          <h1>Thanks for visiting Veg502.</h1>
-        </div>
-      </div>
+    <div class="background">&nbsp;</div>
 
-      <div class="row">
-        <div class="col s12 m6">
+    <div class="container cf">
 
-          <p>We need <strong>your help</strong> to build a database of every vegetarian menu item in Louisville &mdash; no matter what restaurant it's available at. Salad at a steakhouse? Add it. Veggie burger at a fast food restaurant? Add it.</p>
+      <div class="info">
 
-          <br/>
+        <header>
+          <img src="img/veg502-logo.svg" width="200" alt="Veg502" />
+          <h1>
+            vegetarian eating guide,<br>
+            hand-picked by you
+          </h1>
+        </header>
 
-          <p>Use the form, or send an email to <a href="mailto:menus@veg502.com">menus@veg502.com</a> with the following info: </p>
-          
-          <ul class="browser-default">
-            <li>Name of the dish</li>
-            <li>Restaurant</li>
-            <li>Photo</li>
-            <li>Would you recommend it?</li>
+        <article>
+          <h3>
+            We haven&rsquo;t quite sprouted&nbsp;yet.<br>
+            Sign up now to be the first&nbsp;at&nbsp;the&nbsp;table.
+          </h3>
+          <p>With Veg502, you&rsquo;ll be able&nbsp;to:</p>
+          <ul>
+            <li>Eat at any restaurant with confidence</li>
+            <li>See every vegetarian dish in the entire&nbsp;city</li>
+            <li>Vote for your favorite&nbsp;dishes</li>
+            <li>Help others find vegetarian meals they&rsquo;ll&nbsp;love</li>
           </ul>
+        </article>
 
-          <br/>
+      </div><!--/.info-->
 
-          <p>Questions about Veg502? Email us at <a href="mailto:info@veg502.com">info@veg502.com</a>.</p>
-        </div>
+      <div class="signup">
 
-        <div class="col s12 m6">
-          <form action="https://formspree.io/menus@veg502.com" method="POST" class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12">
-                  <img class="carrot" src="carrot.svg" width="70" />
+        <aside class="signup-form">
+          <p>Want to be notified when our first release is ready? Add your email address below and we&rsquo;ll send you a special invite!</p>
+          <div id="mc_embed_signup">
+            <form action="https://veg502.us17.list-manage.com/subscribe/post?u=f3b411fd82e699cdb1ac2c00c&amp;id=0a09f37fb5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                  <img class="carrot" src="img/carrot.svg" width="70" alt="Carrot icon" />
+                  <label for="mce-EMAIL">Your Email Address:</label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" autofocus>
                 </div>
-                <div class="input-field col s12">
-                  <label for="dish_name">Dish Name</label>
-                  <input type="text" name="dish_name" id="dish_name" required />
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
-
-                <div class="input-field col s12">
-                  <label class="label" for="restaurant">Restaurant</label>
-                  <input class="input" type="text" name="restaurant" id="restaurant" required />
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_f3b411fd82e699cdb1ac2c00c_0a09f37fb5" tabindex="-1" value="">
                 </div>
-
-                <div class="divider"></div>
-
-                <div class="input-field col s12" style="margin-top:0;">
-                  <div class="file-field input-field" style="margin-top:0;">
-                    <input type="hidden" role="uploadcare-uploader" name="content" data-images-only />
-                  </div>
-                </div>
-
-                <div class="input-field col s12" style="padding-top:15px;">   
-                  <select name="would_recommend" id="would_recommend">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                  </select>
-                  <label class="label" for="would_recommend">Would you recommend?</label>   
-                </div>
-
-                <div class="input-field col s12">
-                  <label class="label" for="your_name">Your Name</label>       
-                  <input class="input" type="text" name="your_name" id="your_name" required />
+                <div class="clear">
+                  <input type="submit" value="Invite Me!" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
               </div>
-            </div>
-            <div class="card-action">
-              <button type="submit" class="waves-effect waves-light btn">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+            </form>
+          </div><!--/#mc_embed_signup-->
+        </aside>
 
-    <footer class="page-footer">
-      <div class="footer-copyright">
-        <div class="container">
-        &copy; 2017 Veg502
-        <a class="grey-text text-lighten-4 right" href="#!">
-          Eric Butler/Sarah Powers/Aaron Arney
-        </a>
-        </div>
-      </div>
-    </footer>
-            
+      </div><!--/.signup-->
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </div><!--/.container-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108234244-1"></script>
     <script>
-      $(function () {
-        $("select").material_select();
-      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108234244-1');
     </script>
+
   </body>
 </html>
