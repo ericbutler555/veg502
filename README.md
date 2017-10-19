@@ -1,7 +1,9 @@
 # Veg502
 
-Louisville, Kentucky's vegetarian eating guide, hand-picked by you.
+Find every vegetarian dish offered in Louisville restaurants. Vote for and recommend your favorite menu items.
 
-Currently in development.
+Full website currently in development.
 
-Landing page includes an embedded MailChimp signup form for early adopters.
+Temporary landing page includes an embedded MailChimp signup form for early adopters.
+
+Online at <a href="http://veg502.com/">veg502.com</a>
